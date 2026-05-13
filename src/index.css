@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "DM Sans", ui-sans-serif, system-ui, sans-serif;
+  
+  --color-primary: #e040a0;
+  --color-primary-fixed: #ffd6ee;
+  --color-on-primary-fixed-variant: #a02070;
+  
+  --color-secondary: #7c52aa;
+  --color-secondary-container: #eedcff;
+  --color-on-secondary-container: #2e2040;
+  
+  --color-tertiary: #0096cc;
+  --color-tertiary-container: #40c0ee;
+  --color-on-tertiary-container: #00334d;
+  
+  --color-background: #fef7ff;
+  --color-surface: #fef7ff;
+  --color-surface-container: #f8eef8;
+  --color-surface-container-low: #fbf2fb;
+  
+  --color-on-surface: #2e1a28;
+  --color-on-surface-variant: #604868;
+  
+  --radius-lg: 2rem;
+  --radius-xl: 3rem;
+}
+
+@layer base {
+  body {
+    @apply bg-background text-on-surface;
+    font-feature-settings: "ss01", "ss02", "cv01", "cv02";
+  }
+}
+
+.candy-shadow-primary {
+  box-shadow: 0 4px 16px rgba(224, 64, 160, 0.2);
+}
+
+.candy-shadow-secondary {
+  box-shadow: 0 4px 16px rgba(124, 82, 170, 0.15);
+}
+
+.candy-shadow-tertiary {
+  box-shadow: 0 4px 16px rgba(0, 150, 204, 0.15);
+}
+

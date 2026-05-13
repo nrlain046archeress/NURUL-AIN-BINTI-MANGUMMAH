@@ -1,0 +1,6 @@
+{
+  "name": "ColorSeason",
+  "description": "AI-powered personal color analysis to find your perfect palette using facial marker scan.",
+  "requestFramePermissions": ["camera"],
+  "majorCapabilities": []
+}
